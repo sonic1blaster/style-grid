@@ -1,12 +1,12 @@
 //== Grid system
 $grid_columns ?= 24
-$grid_gutter_width ?= 12px
+$grid_gutter_width = $grid_gutter_width is defined ? unit($grid_gutter_width, 'px') : 12px
 
 //== Media queries breakpoints
-$screen_xs ?= 320px
-$screen_sm ?= 640px
-$screen_md ?= 960px
-$screen_lg ?= 1280px
+$screen_xs ?= $screen_xs is defined ? unit($screen_xs, 'px') : 320px
+$screen_sm ?= $screen_sm is defined ? unit($screen_sm, 'px') : 640px
+$screen_md ?= $screen_md is defined ? unit($screen_md, 'px') : 960px
+$screen_lg ?= $screen_lg is defined ? unit($screen_lg, 'px') : 1280px
 
 //== Container sizes
 $container-gutter ?= 14
