@@ -1,12 +1,12 @@
 
-container-fixed($gutter = $grid-gutter-width)
+container-fixed($gutter = $grid_gutter_width)
   margin-right auto
   margin-left auto
   padding-left floor($gutter / 2)
   padding-right ceil($gutter / 2)
   clearfix()
 
-make-row($gutter = $grid-gutter-width)
+make-row($gutter = $grid_gutter_width)
   margin-left ceil($gutter / -2)
   margin-right floor($gutter / -2)
   clearfix()
@@ -15,10 +15,10 @@ make-grid-columns()
   $col
     position relative
     min-height 1px
-    padding-left ceil($grid-gutter-width / 2)
-    padding-right floor($grid-gutter-width / 2)
+    padding-left ceil($grid_gutter_width / 2)
+    padding-right floor($grid_gutter_width / 2)
 
-  for $index in 1..$grid-columns
+  for $index in 1..$grid_columns
     .col-xs-{$index}, .col-sm-{$index}, .col-md-{$index}, .col-lg-{$index}
       @extend $col
 
@@ -26,42 +26,42 @@ float-grid-columns($class)
   $col-float-{$class}
     float left
 
-  for $index in 1..$grid-columns
+  for $index in 1..$grid_columns
     .col-{$class}-{$index}
       @extend $col-float-{$class}
 
 calc-grid-column($index, $class, $type)
   if $type == width and $index > 0
     .col-{$class}-{$index}
-      width unit(($index / $grid-columns)*100, '%')
+      width unit(($index / $grid_columns)*100, '%')
   else if $type == push
     if $index == 0
       .col-{$class}-push-0
         left auto
     else
       .col-{$class}-push-{$index}
-        left unit(($index / $grid-columns)*100, '%')
+        left unit(($index / $grid_columns)*100, '%')
   else if $type == pull
     if $index == 0
       .col-{$class}-pull-0
         right auto
     else
       .col-{$class}-pull-{$index}
-        right unit(($index / $grid-columns)*100, '%')
+        right unit(($index / $grid_columns)*100, '%')
   else if $type == offset
     .col-{$class}-offset-{$index}
-      margin-left unit(($index / $grid-columns)*100, '%')
+      margin-left unit(($index / $grid_columns)*100, '%')
 
-loop-grid-columns($grid-columns, $class, $type)
-  for $index in $grid-columns..0
+loop-grid-columns($grid_columns, $class, $type)
+  for $index in $grid_columns..0
     calc-grid-column($index, $class, $type)
 
 make-grid($class)
   float-grid-columns($class)
-  loop-grid-columns($grid-columns, $class, width)
-  loop-grid-columns($grid-columns, $class, pull)
-  loop-grid-columns($grid-columns, $class, push)
-  loop-grid-columns($grid-columns, $class, offset)
+  loop-grid-columns($grid_columns, $class, width)
+  loop-grid-columns($grid_columns, $class, pull)
+  loop-grid-columns($grid_columns, $class, push)
+  loop-grid-columns($grid_columns, $class, offset)
 
 responsive-visibility()
   display block !important

@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jumangi71/grid/issues"
   },
-  "homepage": "https://github.com/jumangi71/grid#readme"
+  "homepage": "https://github.com/jumangi71/grid#readme",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
 }
