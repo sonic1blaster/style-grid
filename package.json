@@ -1,0 +1,24 @@
+{
+  "name": "grid",
+  "version": "0.0.1",
+  "description": "Micro css lib with grid structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jumangi71/grid.git"
+  },
+  "keywords": [
+    "css",
+    "stylus",
+    "grid"
+  ],
+  "author": "Koshkarov Ruslan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jumangi71/grid/issues"
+  },
+  "homepage": "https://github.com/jumangi71/grid#readme"
+}
