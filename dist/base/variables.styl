@@ -3,23 +3,23 @@ $grid_columns ?= 24
 $grid_gutter_width = $grid_gutter_width is defined ? unit($grid_gutter_width, 'px') : 12px
 
 //== Media queries breakpoints
-$screen_xs ?= $screen_xs is defined ? unit($screen_xs, 'px') : 320px
-$screen_sm ?= $screen_sm is defined ? unit($screen_sm, 'px') : 640px
-$screen_md ?= $screen_md is defined ? unit($screen_md, 'px') : 960px
-$screen_lg ?= $screen_lg is defined ? unit($screen_lg, 'px') : 1280px
+$screen_xs = $screen_xs is defined ? unit($screen_xs, 'px') : 320px
+$screen_sm = $screen_sm is defined ? unit($screen_sm, 'px') : 640px
+$screen_md = $screen_md is defined ? unit($screen_md, 'px') : 960px
+$screen_lg = $screen_lg is defined ? unit($screen_lg, 'px') : 1280px
 
 //== Container sizes
-$container-gutter ?= 14
-$container-xs ?= $screen_xs
-$container-sm ?= $screen_sm
-$container-md ?= $screen_md
-$container-lg ?= $screen_lg
+$container-gutter = 14
+$container-xs = $screen_xs
+$container-sm = $screen_sm
+$container-md = $screen_md
+$container-lg = $screen_lg
 
-$screen-xs-min ?= $screen_xs
-$screen-sm-min ?= $screen_sm
-$screen-md-min ?= $screen_md
-$screen-lg-min ?= $screen_lg
+$screen-xs-min = $screen_xs
+$screen-sm-min = $screen_sm
+$screen-md-min = $screen_md
+$screen-lg-min = $screen_lg
 
-$screen-xs-max ?= ($screen-sm-min - 1)
-$screen-sm-max ?= ($screen-md-min - 1)
-$screen-md-max ?= ($screen-lg-min - 1)
+$screen-xs-max = ($screen-sm-min - 1)
+$screen-sm-max = ($screen-md-min - 1)
+$screen-md-max = ($screen-lg-min - 1)
