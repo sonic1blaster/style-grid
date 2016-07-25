@@ -1,5 +1,5 @@
 # grid
-Micro css lib for grid system like bootstrap used. Work only with webpack-based apps
+Micro css lib for grid system like bootstrap used. Work only with **webpack**-based apps and only with **stylus**
 
 ## How to use
 1) Define in webpack.config file default grid variables like this:
