@@ -10,10 +10,10 @@ $screen_lg = $screen_lg is defined ? unit($screen_lg, 'px') : 1280px
 
 //== Container sizes
 $container-gutter = 14
-$container-xs = $screen_xs
-$container-sm = $screen_sm
-$container-md = $screen_md
-$container-lg = $screen_lg
+$container-xs = $screen_xs - ($grid_gutter_width * 2)
+$container-sm = $screen_sm - ($grid_gutter_width * 2)
+$container-md = $screen_md - ($grid_gutter_width * 2)
+$container-lg = $screen_lg - ($grid_gutter_width * 2)
 
 $screen-xs-min = $screen_xs
 $screen-sm-min = $screen_sm
